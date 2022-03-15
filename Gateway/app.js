@@ -9,7 +9,7 @@ const container = require("./containerConfig");
 const config = container.resolve("config");
 const port = config.get("server.port");
 
-
+console.log("hi")
 app.listen(port, () => {
     console.log(`Server is running on PORT: ${port}, and voila!!`);
  });
